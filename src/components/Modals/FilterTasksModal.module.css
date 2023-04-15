@@ -1,0 +1,47 @@
+
+
+
+.filterTasksTitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.filterTasksContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.filterOptionsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filterOptionsContainer button {
+    padding: 10px 24px;
+    border-radius: 12px;
+    border: 2px solid var(--primary-color);
+    background-color: white;
+    font-size: medium;
+    color: var(--primary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in-out;
+    opacity: 80%;
+}
+
+.filterOptionsContainer button:hover {
+    opacity: 100%;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.02);
+}
+
+
+
+
+
+
+
