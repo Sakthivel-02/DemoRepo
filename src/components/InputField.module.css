@@ -1,0 +1,60 @@
+.inputfield {
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.inputfield input {
+    padding: 12px 60px;
+    border: 2px solid var(--primary-color);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    font-size: large;
+}
+
+.inputfield button {
+    padding: 12px 20px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: 2px solid var(--primary-color);
+    border-left: none;
+    background-color: var(--primary-color);
+    font-size: large;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.inputfield button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+ 
+
+
+@media only screen and (max-width: 500px) {
+
+    .inputfield {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .inputfield input {
+        margin-bottom: 10px;
+        border-radius: 12px;
+    }
+
+    .inputfield button {
+        border-radius: 12px;
+    }
+
+    .inputfield button:hover{
+        cursor: pointer;
+        transform: scale(1.02);
+        border-radius: 12px;
+    }
+
+}

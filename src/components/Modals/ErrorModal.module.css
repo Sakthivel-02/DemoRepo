@@ -1,0 +1,14 @@
+.errH1 {
+    color: var(--primary-color);
+}
+
+.errContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.errMsg {
+    text-align: center;
+    margin: 0;
+}
