@@ -1,0 +1,21 @@
+.header {
+    font-size: larger;
+    margin: 0;
+}
+
+.header h1 {
+    color: var(--primary-color);
+}
+
+@media only screen and (max-width: 380px) {
+    .header {
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .header {
+        font-size: medium;
+    }
+
+}

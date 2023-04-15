@@ -1,0 +1,116 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modalRegularSize {
+    position: fixed;
+    width: 30rem;
+    left: calc(50% - 15rem);
+    height: 16rem;
+    top: calc(50% - 8rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(243, 251, 255, 0.850);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 30;
+    animation: slide-down 400ms ease-out forwards;
+}
+
+.modalTaller {
+    height: 22rem !important;
+    top: calc(50% - 11rem) Im !important;
+    width: 24rem;
+    left: calc(50% - 12rem);
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.closeModalBtn {
+    background-image: url(../../assets/close.png);
+    background-size: contain;
+    background-position: center;
+    background-color: var(--card-background-color);
+    border:none;
+    border-radius: 50%;
+    outline: none;
+    width: 28px;
+    height: 28px;
+    opacity: 70%;
+    position: absolute;
+    margin-right: 5px;
+    margin-top: 5px;
+    right: 0;
+    top: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.closeModalBtn:hover {
+    opacity: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.modalBtn {
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    font-size: large;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    margin-top: 10px;
+    opacity: 80%;
+}
+
+.hasTwoBtnsBtnContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.modalBtn:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    opacity: 100%;
+    transition: all 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 570px) {
+    .modalRegularSize {
+        width: 20rem;
+        left: calc(50% - 10rem);
+    }
+}
+
+
+/* Very small phones (galaxy fold etc.)*/
+@media only screen and (max-width: 330px) {
+    .modalRegularSize {
+        width: 16rem;
+        left: calc(50% - 8rem);
+        height: 19rem;
+        top: calc(50% - 9.5rem);
+    }
+}
