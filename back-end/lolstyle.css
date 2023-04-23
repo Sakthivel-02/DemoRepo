@@ -1,0 +1,133 @@
+
+
+*{
+   margin: 0;
+   padding: 0;
+   font-family:sans-serif;
+}
+
+section{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   width: 100%;
+   background: url('./images/tengen.jpg')no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.form-box{
+   position: relative;
+   width: 400px;
+   height: 450px;
+   background: transparent;
+   border: 2px solid red;
+   border-radius: 20px;
+   backdrop-filter: blur(15px);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+h2{
+   font-size: 2em;
+   color: rgb(255, 255, 255);
+   text-align: center;
+}
+
+.inputbox{
+   position: relative;
+   margin: 30px 0;
+   width: 310px;
+   border-bottom: 2px solid #ffffff;
+}
+
+.inputbox label{
+   position: absolute;
+   top: 50%;
+   left: 5px;
+   transform: translateY(50%);
+   color: #ffffff;
+   font-size: 1em;
+   pointer-events: none;
+   transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+   top: -5px;
+}
+
+.inputbox input{
+   width: 100%;
+   height: 50px;
+   background: transparent ;
+   border: none;
+   outline: none;
+   font-size: 1em;
+   padding: 35px  0 0;
+   color: #ffffff;
+}
+
+.inputbox ion-icon{
+   position: absolute;
+   right: 8px;
+   color: #ffffff;
+   font-size: 1.2em;
+   top: 50px;
+}
+
+.forget{
+   margin: -15px 0 15px;
+   font-size: .9em;
+   color: #ffffff;
+   display: flex;
+   justify-content: center;
+}
+
+.forget label input{
+   margin-right: 4px;
+}
+
+.forget label a{
+   color: #ffffff;
+   text-decoration: none;
+   font-weight: 600;
+   
+}
+
+.forget label a:hover{
+   text-decoration: underline;
+   color: blue;
+}
+
+button{
+   width: 100%;
+   height: 40px;
+   border-radius: 40px;
+   background: #ffffff;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   font-size: 1em;
+   font-weight: 600;
+}
+
+.register{
+   font-size: .9em;
+   color: #ffffff;
+   text-align: center;
+   margin: 25px 0 10px;
+}
+
+.register p a{
+   text-decoration: none;
+   color: #ffffff;
+   font-weight: 600;
+}
+
+.register p a:hover{
+   text-decoration: underline;
+   color: blue;
+}
